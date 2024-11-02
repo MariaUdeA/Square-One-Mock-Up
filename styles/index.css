@@ -1,0 +1,28 @@
+@import "./reset.css";
+@import "./fonts.css";
+@import "./components/index.css";
+
+:root {
+      font-size: 8px;
+    /*these can also be located in */
+    --color-primary: #ED1C24;
+    --color-black: #191919; 
+    --color-white: #FFFFFF; 
+    --color-off-white: #FAFAFA;
+    --color-grey: #CCCCCC;
+}
+p, a, span{
+    font-size: 2rem;
+}
+
+.img-logo{
+    display: block;
+}
+
+.icon{
+    stroke: currentColor; /*con style="color, se puede modificar"*/
+    display: block;
+    width: 3rem; /*minimo 24px*/
+    height: 3rem; /*minimo 24px*/
+}
+
