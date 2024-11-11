@@ -3,10 +3,11 @@
 @import "./components/index.css";
 
 :root {
-      font-size: 8px;
+    font-size: 8px;
     /*these can also be located in */
     --color-primary: #ED1C24;
-    --color-black: #191919; 
+    --color-black: #191919;
+    --color-off-black: #484848; 
     --color-white: #FFFFFF; 
     --color-off-white: #FAFAFA;
     --color-grey: #CCCCCC;

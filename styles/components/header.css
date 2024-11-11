@@ -11,20 +11,31 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    border-bottom: solid 1px var(--color-grey);
+
+}
+
+.header-logo-box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .header-icons {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-    gap: 1rem;
+    gap: 0.3rem;
+    transition: all 300ms;
 }
 
-.icons-search, .icons-profile, .icons-shopping {
+.icon-header {
     display: block;
-    width: 4rem; /*minimo 24px*/
-    height: 4rem; /*minimo 24px*/
-    padding: 4px;
+    width: 3.5rem; /*minimo 24px*/
+    height: 3.5rem; /*minimo 24px*/
+    padding: 0.25rem;
     box-sizing: border-box;
 
     color: var(--color-black);
@@ -32,26 +43,24 @@
 
 }
 
-.icons-search:hover, .icons-profile:hover, .icons-shopping:hover{
+.icon-header:hover{
     color: var(--color-primary);
 }
 
 .header-nav {
     background-color: var(--color-off-white);
     width: 100%;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
-    gap: 10rem;
-
-    border-top: solid 1px var(--color-grey);
+    transition: all 300ms;
 }
 
 .header-nav > .nav-item{
     text-transform: uppercase;
     text-decoration: none;
 
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-family: "Roboto";
     font-weight: 700;
 
@@ -63,4 +72,37 @@
 
 .header-nav > .nav-item:hover{
     color: var(--color-primary);
+}
+
+@media screen and (min-width:768px){
+    .button-menu{
+        display: none;
+    }
+
+    .header-icons {
+        gap: 1rem;
+    }
+
+    .icon-header {
+        width: 4rem; /*minimo 24px*/
+        height: 4rem; /*minimo 24px*/
+        padding: 0.5rem;
+    }
+
+    .header-nav {
+        display: flex;
+        gap: 5rem;
+        padding:0.5rem;
+    }
+}
+
+@media screen and (min-width:1080px){
+    .header-nav {
+        gap: 10rem;
+        padding:1rem; 
+    }
+    .header-nav > .nav-item{
+        font-size: 2rem;
+    }
+ 
 }

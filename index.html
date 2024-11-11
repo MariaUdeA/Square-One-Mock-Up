@@ -13,35 +13,50 @@
     <body>
         <header class="header"> <!--Here is the nav bar and the literal header with icons-->
             <div class="upper-header">
-                <img
-                    src="./assets/images/SQ1_logo.svg"
-                    alt="Square One Academy Store Logo"
-                    width="120" height="37"
-                    class="img-logo"/>
-
+                <div class="header-logo-box">
+                    <button class="button-menu">
+                        <!--Ícono de hamburguesa???-->
+                        <a href ="#" class="icon-header icons-menu">
+                            <svg aria-labelledby="menuTitle" 
+                                xmlns="http://www.w3.org/2000/svg" 
+                                fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor" class="icon">
+                                <title id="menuTitle">Menu</title>
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                        </a>
+                    </button>
+                    <a href ="index.html">  
+                        <img class="img-logo"
+                            src="./assets/images/SQ1_logo.svg"
+                            alt="Square One Academy Store Logo"
+                            width="120" height="37"
+                        />
+                    </a>
+                </div>
                 <div class="header-icons">
                     <!--Search icon-->
-                    <a href ="#" class="icons-search">
+                    <a href ="#" class="icon-header icons-search">
                         <svg aria-labelledby="searchTitle"
                             xmlns="http://www.w3.org/2000/svg"
-                            fill="none" viewBox="0 0 27 27"
+                            fill="none" viewBox="0 0 28 28" height="24"
                             stroke="currentColor"
                             class="icon">
                             <title id="searchTitle">Search</title>
 
                             <path 
                                 fill-rule="evenodd" clip-rule="evenodd" 
-                                stroke-linecap="round" stroke-linejoin="round"
                                 d="M19.3389 17.9129L26.6015 25.1758C26.8568 25.4312 27.0001 25.7776 27 26.1388C26.9999 26.4999 26.8563 26.8462 26.6008 27.1015C26.3454 27.3568 25.999 27.5001 25.6379 27.5C25.2767 27.4999 24.9304 27.3563 24.6752 27.1008L17.4125 19.838C15.2414 21.5196 12.5112 22.311 9.77742 22.0511C7.04359 21.7912 4.51146 20.4995 2.69613 18.4389C0.880803 16.3783 -0.0813541 13.7035 0.00539479 10.9586C0.0921436 8.21377 1.22128 5.60506 3.16311 3.66318C5.10493 1.72131 7.71357 0.592146 10.4584 0.505395C13.2031 0.418644 15.8779 1.38082 17.9384 3.1962C19.999 5.01157 21.2906 7.54377 21.5505 10.2777C21.8104 13.0116 21.0191 15.7418 19.3375 17.9129H19.3389ZM10.8005 19.3992C12.9487 19.3992 15.0088 18.5459 16.5278 17.0269C18.0468 15.5079 18.9001 13.4476 18.9001 11.2994C18.9001 9.15121 18.0468 7.09099 16.5278 5.57198C15.0088 4.05297 12.9487 3.1996 10.8005 3.1996C8.65235 3.1996 6.59218 4.05297 5.0732 5.57198C3.55423 7.09099 2.70088 9.15121 2.70088 11.2994C2.70088 13.4476 3.55423 15.5079 5.0732 17.0269C6.59218 18.5459 8.65235 19.3992 10.8005 19.3992Z"
                                 fill="currentColor" />
                         </svg>
                     </a>
                         
                     <!--Profile icon-->
-                    <a href ="#" class="icons-profile">
+                    <a href ="#" class="icon-header icons-profile">
                         <svg aria-labelledby="profileTitle"
                             xmlns="http://www.w3.org/2000/svg" 
-                            fill="none" viewBox="0 0 22 30" 
+                            fill="none" viewBox="0 0 23 31" height="24" 
                             stroke="currentColor" 
                             class="icon">
                             <title id="profileTitle">Profile</title>
@@ -51,10 +66,10 @@
                     </a>
 
                     <!--Shopping icon-->
-                    <a href ="#" class="icons-shopping">
+                    <a href ="#" class="icon-header icons-shopping">
                         <svg aria-labelledby="shoppingTitle"
                             xmlns="http://www.w3.org/2000/svg" 
-                            fill="none" viewBox="0 0 34 34" 
+                            fill="none" viewBox="0 0 34 34"   height="24" 
                             stroke="currentColor" 
                             class="icon">
                             <title id="shoppingTitle">Shopping Cart</title>
@@ -63,8 +78,6 @@
                     </a>
                 </div>          
             </div>
-
-
             <nav class="header-nav">
                 <a href="#" class="nav-item">women</a>
                 <a href="#" class="nav-item">men</a>
@@ -75,6 +88,25 @@
                 <a href="#" class="nav-item">contact us</a>
             </nav>
         </header>
+        <footer class="footer">
+            <div class="footer-content">
+                <a href ="index.html">  
+                    <img class="img-logo"
+                        src="./assets/images/SQ1_logo.svg"
+                        alt="Square One Academy Store Logo"
+                        width="90" height="27.69"
+                    />
+                </a>
+                <nav class="footer-nav">
+                    <a href="#" class="nav-item">support center</a>
+                    <a href="#" class="nav-item">invoicing</a>
+                    <a href="#" class="nav-item">contract</a>
+                    <a href="#" class="nav-item">careers</a>
+                    <a href="#" class="nav-item">blog</a>
+                    <a href="#" class="nav-item">FAQ,s</a>
+                </nav>
+            </div>
+        </footer>
         <!--script src="./scripts/index.js"></script-->
     </body>
 </html>
