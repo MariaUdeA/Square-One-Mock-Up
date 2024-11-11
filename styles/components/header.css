@@ -74,6 +74,10 @@
     color: var(--color-primary);
 }
 
+.button-menu{
+    border:none;
+}
+
 @media screen and (min-width:768px){
     .button-menu{
         display: none;
@@ -93,6 +97,7 @@
         display: flex;
         gap: 5rem;
         padding:0.5rem;
+        border-bottom: solid 1px var(--color-grey);
     }
 }
 
