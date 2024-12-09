@@ -1,0 +1,206 @@
+.new-arrivals{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1280px;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    gap: 5rem;
+}
+
+.new-arrivals-header{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4rem;
+
+    transition: all 300ms;
+}
+
+.new-arrivals-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 3rem;
+    margin-block-end: 2rem;
+}
+
+.new-arrivals-title>.title{
+    font-size: 4.5rem;
+    font-family: "Roboto";
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 700;
+    color: var(--color-black);
+    text-wrap: pretty;
+
+    transition: all 300ms;
+}
+
+.new-arrivals-title>.description{
+    font-size: 1.75;
+    max-width: 614px;
+    line-height: 2.5rem;
+    font-family: "Poppins";
+    font-weight: 400;
+    color: var(--color-third-black);
+    margin-inline: auto;
+    text-align: center;
+    text-wrap: pretty;
+
+    transition: all 300ms;
+}
+
+.new-arrivals-filter{
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 1.5rem;
+}
+
+.filter-btn{
+    border:solid 1px transparent;
+    border-radius: 10px;
+    padding: 2rem 3rem;
+    background-color: var(--color-off-white);
+
+    color: var(--color-another-black);
+    font-size: 2rem;
+    font-family: "Poppins";
+    font-weight: 400;
+
+    cursor: pointer;
+
+    transition: all 300ms;
+}
+
+.filter-btn.active{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    box-shadow: 0px 20px 34px 0px rgba(0,0,0,0.15);
+}
+
+.filter-btn:not(.active):hover{
+    box-shadow: 0px 20px 34px 0px rgba(0,0,0,0.15);
+    color: var(--color-off-black);
+}
+
+.new-arrivals-filter-select{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    box-sizing: border-box;
+}
+
+.new-arrivals-filter-select >label{
+    color: var(--color-third-black);
+    width: 100%;
+    max-width:30rem;
+    text-align: left;
+
+    font-size: 1.6rem;
+    font-family: "Poppins";
+    font-weight: 400;
+
+    text-wrap: pretty;
+}
+
+.new-arrivals-filter-select > select{
+    width: 100%;
+    max-width:30rem;
+    background-color: var(--color-off-white);
+    color: var(--color-another-black);
+    display: inline-block; /* Aligns like a button */
+
+
+    border:solid 1px var(--color-grey);
+    border-radius: 10px;
+    padding: 1.75rem 2.5rem;
+
+    font-size: 1.75rem;
+    font-family: "Poppins";
+    font-weight: 400;
+    text-overflow: ellipsis;
+
+}
+
+.new-arrivals-cards{
+    width:100%;
+    max-width: 1280px;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:1.5rem;
+    box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+    justify-items: center; /* Center horizontally */
+    transition: all 300ms ease;
+}
+
+.new-arrivals > .filter-btn{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.new-arrivals > .filter-btn:not(.active):hover{
+    color: var(--color-primary);
+    background-color: var(--color-white);
+    border-color: var(--color-primary);
+}
+
+@media screen and (min-width: 760px) {
+    .new-arrivals{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .new-arrivals-filter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+    .new-arrivals-title>.title{
+        font-size: 5.5rem;
+    }
+    .new-arrivals-title>.description{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .new-arrivals-filter-select{
+        display: none;
+    }
+    .new-arrivals-title{
+        margin-block-end: 4rem;
+    }
+
+    .new-arrivals-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 979px) {
+    .new-arrivals{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .new-arrivals-cards{
+        padding:5rem;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

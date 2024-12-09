@@ -1,0 +1,36 @@
+@import "./reset.css";
+@import "./fonts.css";
+@import "./components/checkout.css";
+
+:root {
+    font-size: 8px;
+    /*these can also be located in */
+    --color-primary: #ED1C24;
+    --color-blackish: #323334;
+    --color-black: #191919;
+    --color-off-black: #484848; 
+    --color-third-black: #525252;
+    --color-another-black: #8A8A8A;
+    --color-white: #FFFFFF; 
+    --color-off-white: #FAFAFA;
+    --color-grey: #CCCCCC;
+    --color-lighter-grey: #e5e5e5;
+    --color-cream: #DBD0CCCC;
+    --color-cream-orange: #A86A3D;
+
+}
+p, a, span{
+    font-size: 2rem;
+}
+
+.img-logo{
+    display: block;
+}
+
+.icon{
+    stroke: currentColor; /*con style="color, se puede modificar"*/
+    display: block;
+    width: 3rem; /*minimo 24px*/
+    height: 3rem; /*minimo 24px*/
+}
+

@@ -6,6 +6,7 @@
     font-size: 8px;
     /*these can also be located in */
     --color-primary: #ED1C24;
+    --color-blackish: #323334;
     --color-black: #191919;
     --color-off-black: #484848; 
     --color-third-black: #525252;
@@ -13,6 +14,10 @@
     --color-white: #FFFFFF; 
     --color-off-white: #FAFAFA;
     --color-grey: #CCCCCC;
+    --color-lighter-grey: #e5e5e5;
+    --color-cream: #DBD0CCCC;
+    --color-cream-orange: #A86A3D;
+
 }
 p, a, span{
     font-size: 2rem;

@@ -66,7 +66,7 @@
                     </a>
 
                     <!--Shopping icon-->
-                    <a href ="#" class="icon-header icons-shopping">
+                    <a href ="./cart.html" class="icon-header icons-shopping">
                         <svg aria-labelledby="shoppingTitle"
                             xmlns="http://www.w3.org/2000/svg" 
                             fill="none" viewBox="0 0 34 34"   height="24" 
@@ -89,6 +89,43 @@
             </nav>
         </header>
         <main class="main">
+            <section class="upper-banner">
+                <div class="upper-banner_background">
+                    <div class="upper-banner_img">
+                        <img class="img-banner"
+                                src="./assets/images/banner_man.png"
+                                alt="Classy man on banner"
+                        />
+                        <div class="upper-banner_text">
+                            <p>HOT DEALS THIS WEEK</p>
+                            <h1>SALE UP 50%<br>MODERN FURNITURE</h1>
+                            <button class="banner-btn">View now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="upper-banner_brands">
+                    <img class="img-banner_brand"
+                            src="./assets/images/chanel_logo.png"
+                            alt="Chanel Logo"
+                    />
+                    <img class="img-banner_brand"
+                            src="./assets/images/vuitton_logo.png"
+                            alt="Louis Vuitton Logo"
+                    />
+                    <img class="img-banner_brand"
+                            src="./assets/images/prada_logo.png"
+                            alt="Prada Logo"
+                    />
+                    <img class="img-banner_brand"
+                            src="./assets/images/klein_logo.png"
+                            alt="Calvin Klein Logo"
+                    />
+                    <img class="img-banner_brand"
+                            src="./assets/images/denim_logo.png"
+                            alt="Denim Logo"
+                    />
+                </div>
+            </section>
             <section class="new-arrivals">
                 <div class="new-arrivals-header">
                     <div class="new-arrivals-title">
@@ -102,9 +139,241 @@
                         <button class="filter-btn">Men accesories</button>
                         <button class="filter-btn">Discount deals</button>
                     </nav>
+                    <div class="new-arrivals-filter-select">
+                        <label for="new-arrivals-select">Seleccione una categoría</label>
+                        <select id="new-arrivals-select" class="new-arrivals-select">
+                            <option disabled>Seleccione una categoría</option>
+                            <option>Men's Fashion</option>
+                            <option>Women's Fashion</option>
+                            <option>Women accesories</option>
+                            <option>Men accesories</option>
+                            <option>Discount deals</option>
+                        </select>
+                    </div>
                 </div>
-                <div>
+                <div class="new-arrivals-cards">
+                    <article class="product-card">
+                        <div class="product-card_image-box">
+                            <img class="product-card_image"
+                                src="./assets/images/woman_dress.jpg"
+                                alt="Wool Jacket"/>
+                        </div>
+                        <div class="product-card_content">
+                            <h3 class="product-card_title">Wool Jacket</h3>
+                            <span class="product-card_brand">Gucci</span>
+                            <div class="product-card_prices">
+                                <span class="product-card_discount-price">$95.50</span>  <!--Descuento-->
+                                <span class="product-card_original-price">$95.50</span>  <!--Original-->
+                            </div>
+                            <div class="product-card_colors"><!--Colores-->
+                                <button class="product-color" style="background-color: #EB5709;"></button>
+                                <button class="product-color" style="background-color: #D9D9D9;"></button>
+                            </div>
+                            <button class="product-card_buy">Comprar</button>
+                        </div>
+                    </article>
 
+                    <article class="product-card">
+                        <div class="product-card_image-box">
+                            <img class="product-card_image"
+                            src="https://media.gucci.com/style/DarkGray_Center_0_0_800x800/1722322881/810341_XKEFL_1185_001_100_0000_Light-Wool-and-cashmere-top.jpg"
+                            alt="Wool and cashmere top"/>
+                        </div>
+                        <div class="product-card_content">
+                            <h3 class="product-card_title">Wool and cashmere top</h3>
+                            <span class="product-card_brand">Gucci</span>
+                            <div class="product-card_prices">
+                                <span class="product-card_discount-price">$955.50</span>  <!--Descuento-->
+                                <span class="product-card_original-price">$ 1,700</span>  <!--Original-->
+                            </div>
+                            <div class="product-card_colors"><!--Colores-->
+                                <button class="product-color" style="background-color: #EB5709;"></button>
+                                <button class="product-color" style="background-color: #D9D9D9;"></button>
+                            </div>
+                            <button class="product-card_buy">Comprar</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card_image-box">
+                            <img class="product-card_image"
+                            src="https://www.prada.com/content/dam/pradabkg_products/U/UCN/UCN583/11AQF0002/UCN583_11AQ_F0002_S_OOO_SLF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1000.1000.jpg"
+                            alt="Cotton Shirt"/>
+                        </div>
+                        <div class="product-card_content">
+                            <h3 class="product-card_title">Cotton Shirt</h3>
+                            <span class="product-card_brand">Prada</span>
+                            <div class="product-card_prices">
+                                <span class="product-card_discount-price">$1,200</span>  <!--Descuento-->
+                                <span class="product-card_original-price">$1,400</span>  <!--Original-->
+                            </div>
+                            <div class="product-card_colors"><!--Colores-->
+                                <button class="product-color" style="background-color: #EB5709;"></button>
+                                <button class="product-color" style="background-color: #D9D9D9;"></button>
+                            </div>
+                        
+                            <button class="product-card_buy">Comprar</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card_image-box">
+                            <img class="product-card_image"
+                            src="https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-neverfull-mm--M46987_PM2_Front%20view.png?wid=1090&hei=1090"
+                            alt="Neverfull MM tote"/>
+                        </div>
+                        <div class="product-card_content">
+                            <h3 class="product-card_title">Neverfull MM tote</h3>
+                            <span class="product-card_brand">Louis Vuitton</span>
+                            <div class="product-card_prices">
+                                <span class="product-card_discount-price">$1,600</span>  <!--Descuento-->
+                                <span class="product-card_original-price">$2,030</span>  <!--Original-->
+                            </div>
+                            <div class="product-card_colors"><!--Colores-->
+                                <button class="product-color" style="background-color: #EB5709;"></button>
+                                <button class="product-color" style="background-color: #D9D9D9;"></button>
+                            </div>
+                            <button class="product-card_buy">Comprar</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card_image-box">
+                            <img class="product-card_image"
+                                src="./assets/images/woman_dress.jpg"
+                                alt="Wool Jacket"/>
+                        </div>
+                        <div class="product-card_content">
+                            <h3 class="product-card_title">Wool Jacket</h3>
+                            <span class="product-card_brand">Gucci</span>
+                            <div class="product-card_prices">
+                                <span class="product-card_discount-price">$95.50</span>  <!--Descuento-->
+                                <span class="product-card_original-price">$95.50</span>  <!--Original-->
+                            </div>
+                            <div class="product-card_colors"><!--Colores-->
+                                <button class="product-color" style="background-color: #EB5709;"></button>
+                                <button class="product-color" style="background-color: #D9D9D9;"></button>
+                            </div>
+                            <button class="product-card_buy">Comprar</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card_image-box">
+                            <img class="product-card_image"
+                            src="https://media.gucci.com/style/DarkGray_Center_0_0_800x800/1722322881/810341_XKEFL_1185_001_100_0000_Light-Wool-and-cashmere-top.jpg"
+                            alt="Wool and cashmere top"/>
+                        </div>
+                        <div class="product-card_content">
+                            <h3 class="product-card_title">Wool and cashmere top</h3>
+                            <span class="product-card_brand">Gucci</span>
+                            <div class="product-card_prices">
+                                <span class="product-card_discount-price">$955.50</span>  <!--Descuento-->
+                                <span class="product-card_original-price">$ 1,700</span>  <!--Original-->
+                            </div>
+                            <div class="product-card_colors"><!--Colores-->
+                                <button class="product-color" style="background-color: #EB5709;"></button>
+                                <button class="product-color" style="background-color: #D9D9D9;"></button>
+                            </div>
+                            <button class="product-card_buy">Comprar</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card_image-box">
+                            <img class="product-card_image"
+                            src="https://www.prada.com/content/dam/pradabkg_products/U/UCN/UCN583/11AQF0002/UCN583_11AQ_F0002_S_OOO_SLF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1000.1000.jpg"
+                            alt="Cotton Shirt"/>
+                        </div>
+                        <div class="product-card_content">
+                            <h3 class="product-card_title">Cotton Shirt</h3>
+                            <span class="product-card_brand">Prada</span>
+                            <div class="product-card_prices">
+                                <span class="product-card_discount-price">$1,200</span>  <!--Descuento-->
+                                <span class="product-card_original-price">$1,400</span>  <!--Original-->
+                            </div>
+                            <div class="product-card_colors"><!--Colores-->
+                                <button class="product-color" style="background-color: #EB5709;"></button>
+                                <button class="product-color" style="background-color: #D9D9D9;"></button>
+                            </div>
+                        
+                            <button class="product-card_buy">Comprar</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card_image-box">
+                            <img class="product-card_image"
+                            src="https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-neverfull-mm--M46987_PM2_Front%20view.png?wid=1090&hei=1090"
+                            alt="Neverfull MM tote"/>
+                        </div>
+                        <div class="product-card_content">
+                            <h3 class="product-card_title">Neverfull MM tote</h3>
+                            <span class="product-card_brand">Louis Vuitton</span>
+                            <div class="product-card_prices">
+                                <span class="product-card_discount-price">$1,600</span>  <!--Descuento-->
+                                <span class="product-card_original-price">$2,030</span>  <!--Original-->
+                            </div>
+                            <div class="product-card_colors"><!--Colores-->
+                                <button class="product-color" style="background-color: #EB5709;"></button>
+                                <button class="product-color" style="background-color: #D9D9D9;"></button>
+                            </div>
+                            <button class="product-card_buy">Comprar</button>
+                        </div>
+                    </article>
+
+                </div>
+                <button class="filter-btn">View more</button>
+            </section>
+            <section class="lower-banner">
+                <div class="lower-banner_bg"></div>
+                <div class="lower-banner_text">
+                    <p class="lower-banner_p1">Extra 30% Off Online</p>
+                    <h2>Summer Season Sale</h2>
+                    <p class="lower-banner_p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel dolor
+                        pellentesque, varius elit quis, malesuada quam.</p>
+                    <button class="lower-banner_button">Shop Now</button>
+                </div>
+            </section>
+            <section class="more-info">
+                <div class="more-info-item">
+                    <img class="more-info-picture"
+                                src="./assets/images/high_quality.png"
+                                alt="High Quality Symbol"/>
+                    <div class="more-info-text">
+                        <h3>High Quality</h3>
+                        <p>Crafted from top materials</p>
+                    </div>
+                </div>
+
+                <div class="more-info-item">
+                    <img class="more-info-picture"
+                                src="./assets/images/warranty.png"
+                                alt="Warranty Symbol"/>
+                    <div class="more-info-text">
+                        <h3>Warranty Protection</h3>
+                        <p>Over 2 years</p>
+                    </div>
+                </div>
+
+                <div class="more-info-item">
+                    <img class="more-info-picture"
+                                src="./assets/images/shipping.png"
+                                alt="Shipping Symbol"/>
+                    <div class="more-info-text">
+                        <h3>Free Shipping</h3>
+                        <p>Order over 150 $</p>
+                    </div>
+                </div>
+
+                <div class="more-info-item">
+                    <img class="more-info-picture"
+                                src="./assets/images/call.png"
+                                alt="Support Symbol"/>
+                    <div class="more-info-text">
+                        <h3>24 / 7 Support</h3>
+                        <p>Dedicated support</p>
+                    </div>
                 </div>
             </section>  
         </main>

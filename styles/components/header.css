@@ -3,6 +3,7 @@
     max-width: 1280px;
 
     box-sizing: border-box;
+
     padding: 1.5rem;
 
     margin-left: auto;
@@ -13,7 +14,6 @@
     justify-content: space-between;
 
     border-bottom: solid 1px var(--color-grey);
-
 }
 
 .header-logo-box{
@@ -54,6 +54,7 @@
     justify-content: center;
     align-items: center;
     transition: all 300ms;
+    box-sizing: border-box;
 }
 
 .header-nav > .nav-item{
@@ -79,6 +80,10 @@
 }
 
 @media screen and (min-width:768px){
+    .header > .upper-header{
+        border: none;
+    }
+
     .button-menu{
         display: none;
     }
@@ -98,13 +103,22 @@
         gap: 5rem;
         padding:0.5rem;
         border-bottom: solid 1px var(--color-grey);
+        border-top: solid 1px var(--color-grey);
+
     }
 }
 
 @media screen and (min-width:1080px){
+    .header > .upper-header{
+        border: none;
+    }
+
     .header-nav {
         gap: 10rem;
         padding:1rem; 
+        border-bottom: solid 1px var(--color-grey);
+        border-top: solid 1px var(--color-grey);
+
     }
     .header-nav > .nav-item{
         font-size: 2rem;
