@@ -1,0 +1,205 @@
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width:100%;
+    gap:5rem;
+    padding:3rem;
+    transition: all 300ms;
+
+}
+
+.contact-item{
+    width: 100%;
+    box-sizing:border-box;
+    display: flex;
+    flex-direction: column;
+    gap:3.5rem;
+    transition: all 300ms;
+
+}
+
+.contact-item>h2{
+    font-family: "Volkhov";
+    font-size: 4.75rem;
+    font-weight: 400;
+    text-align: left;
+    word-break: break-all;
+    color: var(--color-off-black);
+    transition: all 300ms;
+}
+
+.contact-info-header{
+    width: 100%;
+    box-sizing:border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    align-items: flex-end; 
+    color: var(--color-off-black); 
+    gap:2rem;
+}
+
+.contact-info-header>h2{
+    font-family: "Volkhov";
+    font-size: 4.75rem;
+    font-weight: 400;
+    text-align: left;
+    word-break: break-all;
+    transition: all 300ms;
+}
+
+.contact-info-header>p{
+    font-family: "Poppins";
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: left;
+    line-height: 3rem;
+}
+
+.contact-info-header>p>a{
+    text-decoration: none;
+}
+
+.input-checkout{
+    width: 100%;
+    box-sizing:border-box;
+
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 2rem;
+
+    overflow: hidden;
+    text-overflow: elipsis;
+
+    color: var(--color-another-black);
+    padding:2.25rem;
+    border: solid 1px var(--color-another-black);
+    border-radius: 4px;
+
+    transition: all 300ms;
+}
+
+.input-checkout:invalid {
+    border-color: var(--color-primary);
+    accent-color: var(--color-primary);
+}
+
+.delivery-double{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.save-input{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.save-input>label{
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--color-another-black);
+    text-align: left;
+    text-wrap: pretty;
+}
+
+.save-input>input{
+    border-radius : 0;
+    border-color:var(--color-black);
+    accent-color: var(--color-primary);
+    height: 3rem;
+    width: 3rem;
+}
+
+.input-icon{
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.input-icon>div{
+    position: absolute;
+    right: 3rem; /* Adjust the distance from the right edge */
+    top: 50%; /*in center*/
+    transform: translateY(-50%);
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.input-icon>.lock-icon{
+    width: 3rem;
+    aspect-ratio: 1;
+    background-image: url(../../../assets/images/lock.png);
+}
+
+.input-icon>.card-logo{
+    height: 3rem;
+    aspect-ratio: 2;
+    background-image: url("https://mtf.mastercard.co.za/content/dam/public/mastercardcom/mea/za/logos/mc-logo-52.svg");
+}
+
+.pay-now-button{
+    width:100%;
+    box-sizing: border-box;
+
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: solid 1px var(--color-primary);
+    border-radius:10px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    font-size: 2rem;
+    font-family: "Poppins";
+    font-weight: 400;
+    padding: 3rem;
+}
+
+.pay-now-button:hover{
+    box-shadow: 0px 20px 34px 0px rgba(0,0,0,0.15);
+    color: var(--color-primary);
+    background-color: var(--color-white);
+    border-color: var(--color-primary);
+}
+
+.copyright{
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+@media screen and (min-width:760px){
+    .contact-info{
+        gap: 7rem;
+    }
+    .contact-item{
+        gap:5rem;
+    }
+    .contact-item>h2{
+        font-size: 5.75rem;
+    }
+    .contact-info-header>h2{
+        font-size: 5.75rem;
+    }
+    .input-checkout{
+        padding: 3rem;
+    }
+
+
+}

@@ -4,7 +4,7 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>SQ1 Academy Store</title>
-        <link rel="stylesheet" href="styles/index.css"/>
+        <link rel="stylesheet" href="styles/checkout.css"/>
 
         <link rel="icon" href="https://www.square1.io/favicon.svg" type="image/svg+xml"> <!-- Fallback -->
         <link rel="icon" href="https://www.square1.io/favicon.ico" type="image/ico"> <!-- Fallback -->
@@ -88,6 +88,107 @@
                 <a href="#" class="nav-item">contact us</a>
             </nav>
         </header>
+        <main class="main">
+            <h1>Checkout</h1>
+            <div class="checkout-main">
+                <section class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-info-header">
+                            <h2>Contact</h2>
+                            <p>Have an account?
+                                <a href="#">Create Account</a>
+                            </p>
+                        </div>
+                        <input class="input-checkout" type="email" placeholder="Email Adress">
+                    </div>
+
+                    <div class="contact-item">
+                        <h2>Delivery</h2>
+                        <select class="input-checkout">
+                            <option disabled selected>Country / Region</option>
+                            <option value="IT">Italy</option>
+                            <option value="UK">United Kingdom</option>
+                            <option value="COL">Colombia</option>
+                            <option value="ES">Spain</option>
+                        </select>
+                        <div class="delivery-double">
+                            <input class="input-checkout" type="text" placeholder="First Name">
+                            <input class="input-checkout" type="text" placeholder="Last Name">
+                        </div>
+                        <input class="input-checkout" type="text" placeholder="Address">
+                        <div class="delivery-double">
+                            <input class="input-checkout" type="text" placeholder="City">
+                            <input class="input-checkout" type="text" placeholder="Postal Code">
+                        </div>
+                        <div class="save-input">
+                            <input type="checkbox" id="save-delivery1" value="save">
+                            <label for="save-delivery1">Save This Info for future</label>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <h2>Payment</h2>
+                        <div class="input-icon">
+                            <select class="input-checkout">
+                                <option disabled selected>Credit Card</option>
+                                <option value="Visa">Visa</option>
+                                <option value="MC">Mastercard</option>
+                                <option value="COL">Colombia</option>
+                                <option value="ES">Spain</option>
+                            </select>
+                            <div class="card-logo"></div>
+                        </div>
+                        <div class="input-icon">
+                            <input class="input-checkout" type="text" inputmode="numeric" pattern="\d{16,16}" placeholder="Card Number" maxlength="16">
+                            <div class="lock-icon"></div>
+                        </div>
+                        <div class="delivery-double">
+                            <input class="input-checkout" type="text" placeholder="Expiration Date" pattern="\v{5,5}" maxlength="5">
+                            <input class="input-checkout" type="password" inputmode="numeric" pattern="\d{3,3}" placeholder="Security Code" maxlength="3">
+                        </div>
+                        <input class="input-checkout" type="text" placeholder="Card Holder Name">
+                        <div class="save-input">
+                            <input type="checkbox" id="save-delivery2" value="save">
+                            <label for="save-delivery2">Save This Info for future</label>
+                        </div>
+                    </div>
+
+                    <button class="pay-now-button">Pay Now</button>
+                    <p class="copyright">Copyright © 2022 FASCO. All Rights Reserved.</p>
+                </section>
+                <section class="product-info">
+                    <article class="product-description">
+                        <div class="product-card_image-box">
+                            <img class="product_image"
+                                src="./assets/images/red_dress.png"
+                                alt="Mini Dress With Ruffled Straps"/>
+                            <div class="product-quantity">2</div>
+                        </div>
+
+                        <div class="product-card_content">
+                            <h3 class="product-card_title">Mini dress with ruffled straps</h3>
+                            <div class="product-card_desc">
+                                <span class="product-card_color-name">Red</span>
+                                <span class="product-card_price">$100.00</span>
+                            </div>
+                        </div>
+                    </article>
+                    <div class="prices">
+                        <div class="price-names">
+                            <p class="price-name">Subtotal</p>
+                            <p class="price-name">Shipping</p>
+                            <p class="price-name">Total</p>
+                        </div>
+                        <div class="price-numbers">
+                            <p class="price-number">$100.00</p>
+                            <p class="price-number">$40.00</p>
+                            <p class="price-number">$140.00</p>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </main>
         <footer class="footer">
             <div class="footer-content">
                 <a href ="index.html">  

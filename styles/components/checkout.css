@@ -1,7 +1,17 @@
 @import "./header.css";
 @import "./footer.css";
-@import "./product-card.css";;
+@import "./product-card.css";
+@import "./checkout/contact-info.css";
+@import "./checkout/product-info.css";
 
+.body{
+    width:100%;
+    max-width: 1280px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .main{
     width:100%;
@@ -13,10 +23,32 @@
     align-items: center;
 }
 
-.body{
-    width:100%;
-    box-sizing: border-box;
+.main>h1{
+    font-size: 4rem;
+    font-family: "Volkhov";
+    font-weight: 400;
+
+    padding: 6rem;
+    text-align: center;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+.checkout-main{
+    box-sizing:border-box;
+    width: 100%;
+    max-width: 1280px;
+    padding: 3rem;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+@media screen and (min-width: 760px) {
+    .checkout-main{
+        flex-wrap: nowrap;
+    }
 }
