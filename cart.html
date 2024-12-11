@@ -4,7 +4,7 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>SQ1 Academy Store</title>
-        <link rel="stylesheet" href="styles/index.css"/>
+        <link rel="stylesheet" href="styles/cart.css"/>
 
         <link rel="icon" href="https://www.square1.io/favicon.svg" type="image/svg+xml"> <!-- Fallback -->
         <link rel="icon" href="https://www.square1.io/favicon.ico" type="image/ico"> <!-- Fallback -->
@@ -88,7 +88,58 @@
                 <a href="#" class="nav-item">contact us</a>
             </nav>
         </header>
-        <!-- <footer class="footer">
+        <main class="main">
+            <h1>Shopping Cart</h1>
+            <div class="Under-title">
+                <a class="under-title-link" href="./index.html">Home</a>
+                <span> ></span>
+                <a class="under-title-link" href="./cart.html">Your Shopping Cart</a>
+            </div>
+            <section class="product-card-cart">
+                    <div class="product-cart-col">
+                        <h3>Product</h3>
+                        <article class="product-mini-card">
+                            <img class="product_image"
+                            src="./assets/images/red_dress.png"
+                            alt="Mini Dress With Ruffled Straps"/>
+                            <div class="product-details">
+                                <h3>Mini Dress With Ruffed Straps</h3>
+                                <p>Color: Red</p>
+                                <button class="product-remove">Remove</button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="product-cart-col">
+                        <h3>Price</h3>
+                        <p class="product-price-text">$14.90</p>
+                    </div>
+                    <div class="product-cart-col">
+                        <h3>Quantity</h3>
+                        <div class="more-item-button">
+                            <button>-</button>
+                            <input type="numeric" placeholder="01" maxlength="2">
+                            <button>+</button>
+                        </div>                    
+                    </div>
+                    <div class="product-cart-col">
+                        <h3>Total</h3>
+                        <p class="product-price-text">$14.90</p>      
+                    </div>
+                </section>
+                <section class="product-checkout">
+                    <div class="complete-checkbox">
+                        <input type="checkbox" id="wrap-checkbox" class="square">
+                        <label for="wrap-checkbox">For <span>$10.00</span> Please Wrap The Product</label>
+                    </div>
+                    <div class="subtotal">
+                        <p>Subtotal</p>
+                        <p>$100.00</p>
+                    </div>
+                    <a class="checkout-btn" role="button" href="./checkout.html">Checkout</button>
+                    <a class="view-cart" href="./cart.html">View Cart</a>
+                    </section>
+        </main>
+        <footer class="footer">
             <div class="footer-content">
                 <a href ="index.html">  
                     <img class="img-logo"
@@ -106,7 +157,7 @@
                     <a href="#" class="nav-item">FAQ,s</a>
                 </nav>
             </div>
-        </footer> -->
+        </footer>
         <!--script src="./scripts/index.js"></script-->
     </body>
 </html>

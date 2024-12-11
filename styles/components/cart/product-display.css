@@ -1,0 +1,212 @@
+.product-card-cart{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid 1px #00000063;
+}
+
+.product-cart-col{
+    width:100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.product-cart-col>h3{
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Volkhov";
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--color-black);
+    padding: 2rem;
+    border-bottom: solid 1px #00000063;
+}
+
+.product-cart-col:first-child>h3{
+    text-align: left;
+}
+
+.product-cart-col:last-child>h3{
+    text-align: right;
+}
+
+.product-mini-card{
+    width:100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap:2rem;
+    padding: 2rem;
+
+}
+
+.product_image{
+    aspect-ratio: 0.75;
+    height:auto;
+    width: 100%;
+    box-sizing: border-box;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.product-details{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+
+    font-size: 2.5rem;
+    font-family: "Poppins";
+    font-weight: 400;
+    text-align: left;
+    text-wrap: pretty;
+    color: var(--color-another-black);
+
+    flex-direction: column;
+    align-items: flex-start;
+    gap:2rem;
+}
+
+.product-details>p{
+    font-size: 2rem;
+}
+
+.product-details>h3{
+    font-family: "Volkhov";
+    color: var(--color-black);
+}
+
+.product-remove{
+    padding: 0;
+    cursor: pointer;
+    font-size: 2rem;
+    font-family: "Poppins";
+    font-weight: 400;
+    text-align: left;
+    text-wrap: pretty;
+    color: var(--color-another-black);
+
+    text-decoration: underline;
+    border:solid 1px transparent;
+    background-color: transparent;
+    transition: all 300ms;
+}
+
+.product-remove:hover{
+    color: var(--color-primary);
+}
+
+.product-cart-col>p{
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: "Volkhov";
+    text-align: center;
+    color:var(--color-black);
+    padding:2rem;
+}
+
+.product-cart-col:last-child>p{
+    text-align: right;
+}
+
+.more-item-button{
+    display:flex;
+    flex-direction: row;
+    gap:0.8rem;
+    border: solid 1px var(--color-another-black);
+    border-radius: 3.5px;
+
+    margin: 2rem;
+    padding: 0.3rem;
+}
+
+.more-item-button>button{
+    font-size: 2rem;
+    line-height: 2rem;
+    font-family: "Poppins";
+    text-align: center;
+
+    color: var(--color-blackishy);
+    font-weight: 500;
+    background: none;
+    border:none;
+    transition: all 300ms;
+}
+
+.more-item-button>button:hover{
+    color: var(--color-primary);
+}
+
+.more-item-button>input{
+    font-size: 2rem;
+    line-height: 2rem;
+    font-family: "Poppins";
+    text-align: center;
+
+    font-weight: 400;
+    text-align: center;
+    width: 3.2rem;
+    border:none;
+    border-radius: 0;
+    color: var(--color-another-black);
+}
+
+.more-item-button>input::-webkit-outer-spin-button,
+.more-item-button>input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+@media screen and (min-width:760px){
+    .product-mini-card{
+        flex-wrap: nowrap;
+    }
+    .product_image{
+        width: 45%;
+    }
+    .product-details{
+        font-size: 2.5rem;
+    }
+    .product-details>p{
+        font-size: 2.5rem;
+    }
+    .product-remove{
+        font-size: 2.5rem;
+    }
+    .product-cart-col>p{
+        font-size: 2.5rem;
+    }
+    .more-item-button>button{
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+    .more-item-button>input{
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+
+    .product-mini-card,.product-cart-col>p
+    {
+        padding-top:3rem;
+        padding-bottom: 4rem;
+    }
+    .more-item-button{
+        margin-top:3rem;
+        margin-bottom: 4rem;
+    }
+
+
+
+}

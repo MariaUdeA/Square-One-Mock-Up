@@ -1,6 +1,6 @@
 @import "./reset.css";
 @import "./fonts.css";
-@import "./components/index.css";
+@import "./components/cart.css";
 
 :root {
     font-size: 8px;
@@ -8,6 +8,7 @@
     --color-primary: #ED1C24;
     --color-blackish: #323334;
     --color-black: #191919;
+    --color-blackishy: #171717;
     --color-off-black: #484848; 
     --color-third-black: #525252;
     --color-another-black: #8A8A8A;
@@ -17,6 +18,7 @@
     --color-lighter-grey: #e5e5e5;
     --color-cream: #DBD0CCCC;
     --color-cream-orange: #A86A3D;
+    --color-beige: #F5F5F5;
 
 }
 p, a, span{
@@ -25,5 +27,12 @@ p, a, span{
 
 .img-logo{
     display: block;
+}
+
+.icon{
+    stroke: currentColor; /*con style="color, se puede modificar"*/
+    display: block;
+    width: 3rem; /*minimo 24px*/
+    height: 3rem; /*minimo 24px*/
 }
 
