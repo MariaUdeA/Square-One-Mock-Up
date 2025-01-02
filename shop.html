@@ -4,7 +4,7 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>SQ1 Academy Store</title>
-        <link rel="stylesheet" href="styles/index.css"/>
+        <link rel="stylesheet" href="styles/shop.css"/>
 
         <link rel="icon" href="https://www.square1.io/favicon.svg" type="image/svg+xml"> <!-- Fallback -->
         <link rel="icon" href="https://www.square1.io/favicon.ico" type="image/ico"> <!-- Fallback -->
@@ -40,7 +40,7 @@
                     <a href ="#" class="icon-header icons-search">
                         <svg aria-labelledby="searchTitle"
                             xmlns="http://www.w3.org/2000/svg"
-                            fill="none" viewBox="0 0 28 28" height="24"
+                            fill="none" viewBox="0 0 28 28"
                             stroke="currentColor"
                             class="icon">
                             <title id="searchTitle">Search</title>
@@ -56,7 +56,7 @@
                     <a href ="#" class="icon-header icons-profile">
                         <svg aria-labelledby="profileTitle"
                             xmlns="http://www.w3.org/2000/svg" 
-                            fill="none" viewBox="0 0 23 31" height="24" 
+                            fill="none" viewBox="0 0 23 31" 
                             stroke="currentColor" 
                             class="icon">
                             <title id="profileTitle">Profile</title>
@@ -66,16 +66,19 @@
                     </a>
 
                     <!--Shopping icon-->
-                    <a href ="#" class="icon-header icons-shopping">
-                        <svg aria-labelledby="shoppingTitle"
-                            xmlns="http://www.w3.org/2000/svg" 
-                            fill="none" viewBox="0 0 34 34"   height="24" 
-                            stroke="currentColor" 
-                            class="icon">
-                            <title id="shoppingTitle">Shopping Cart</title>
-                            <path d="M8.00091 30.25C7.36341 30.25 6.79674 30.0552 6.30091 29.6656C5.80508 29.276 5.46272 28.7743 5.27383 28.1604L1.66133 15.0562C1.54327 14.6076 1.62001 14.1944 1.89154 13.8167C2.16306 13.4389 2.53494 13.25 3.00716 13.25H9.73633L15.9697 3.97083C16.0877 3.78194 16.253 3.62847 16.4655 3.51042C16.678 3.39236 16.9023 3.33333 17.1384 3.33333C17.3745 3.33333 17.5988 3.39236 17.8113 3.51042C18.0238 3.62847 18.1891 3.78194 18.3072 3.97083L24.5405 13.25H31.3405C31.8127 13.25 32.1846 13.4389 32.4561 13.8167C32.7276 14.1944 32.8044 14.6076 32.6863 15.0562L29.0738 28.1604C28.8849 28.7743 28.5426 29.276 28.0467 29.6656C27.5509 30.0552 26.9842 30.25 26.3467 30.25H8.00091ZM7.96549 27.4167H26.3822L29.4988 16.0833H4.84883L7.96549 27.4167ZM17.1738 24.5833C17.953 24.5833 18.62 24.3059 19.1749 23.751C19.7297 23.1962 20.0072 22.5292 20.0072 21.75C20.0072 20.9708 19.7297 20.3038 19.1749 19.749C18.62 19.1941 17.953 18.9167 17.1738 18.9167C16.3947 18.9167 15.7276 19.1941 15.1728 19.749C14.6179 20.3038 14.3405 20.9708 14.3405 21.75C14.3405 22.5292 14.6179 23.1962 15.1728 23.751C15.7276 24.3059 16.3947 24.5833 17.1738 24.5833ZM13.1717 13.25H21.1405L17.1384 7.3L13.1717 13.25Z" fill="currentColor"/>
-                        </svg>
-                    </a>
+                    <div class="shopping-cart-box">
+                        <a href ="./cart.html" class="icon-header icons-shopping">
+                            <svg aria-labelledby="shoppingTitle"
+                                xmlns="http://www.w3.org/2000/svg" 
+                                fill="none" viewBox="0 0 34 34" 
+                                stroke="currentColor" 
+                                class="icon">
+                                <title id="shoppingTitle">Shopping Cart</title>
+                                <path d="M8.00091 30.25C7.36341 30.25 6.79674 30.0552 6.30091 29.6656C5.80508 29.276 5.46272 28.7743 5.27383 28.1604L1.66133 15.0562C1.54327 14.6076 1.62001 14.1944 1.89154 13.8167C2.16306 13.4389 2.53494 13.25 3.00716 13.25H9.73633L15.9697 3.97083C16.0877 3.78194 16.253 3.62847 16.4655 3.51042C16.678 3.39236 16.9023 3.33333 17.1384 3.33333C17.3745 3.33333 17.5988 3.39236 17.8113 3.51042C18.0238 3.62847 18.1891 3.78194 18.3072 3.97083L24.5405 13.25H31.3405C31.8127 13.25 32.1846 13.4389 32.4561 13.8167C32.7276 14.1944 32.8044 14.6076 32.6863 15.0562L29.0738 28.1604C28.8849 28.7743 28.5426 29.276 28.0467 29.6656C27.5509 30.0552 26.9842 30.25 26.3467 30.25H8.00091ZM7.96549 27.4167H26.3822L29.4988 16.0833H4.84883L7.96549 27.4167ZM17.1738 24.5833C17.953 24.5833 18.62 24.3059 19.1749 23.751C19.7297 23.1962 20.0072 22.5292 20.0072 21.75C20.0072 20.9708 19.7297 20.3038 19.1749 19.749C18.62 19.1941 17.953 18.9167 17.1738 18.9167C16.3947 18.9167 15.7276 19.1941 15.1728 19.749C14.6179 20.3038 14.3405 20.9708 14.3405 21.75C14.3405 22.5292 14.6179 23.1962 15.1728 23.751C15.7276 24.3059 16.3947 24.5833 17.1738 24.5833ZM13.1717 13.25H21.1405L17.1384 7.3L13.1717 13.25Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <div class="product-total">4</div>
+                    </div>
                 </div>          
             </div>
             <nav class="header-nav">
@@ -88,6 +91,78 @@
                 <a href="#" class="nav-item">contact us</a>
             </nav>
         </header>
+        <main class="main">
+            <section class="filters">
+                <h2 class="filter-title">Filters</h2>
+                <h3>Size</h3>
+                <div class="filter-options filter-buttons-size">
+                    <button class="size-buttons">XS</button>
+                    <button class="size-buttons">S</button>
+                    <button class="size-buttons">M</button>
+                    <button class="size-buttons">L</button>
+                    <button class="size-buttons">XL</button>
+                </div>
+                <h3>Colors</h3>
+                <div class="filter-options filter-buttons-colors">
+                    <button class="product-color" style="background-color: #FF6C6C;"></button>
+                    <button class="product-color" style="background-color: #FF7629;"></button>
+                    <button class="product-color" style="background-color: #FFF06C;"></button>
+                    <button class="product-color" style="background-color: #9BFF6C;"></button>
+                    <button class="product-color" style="background-color: #6CFF9E;"></button>
+                    <button class="product-color" style="background-color: #6CFFDC;"></button>
+                    <button class="product-color" style="background-color: #6CB9FF;"></button>
+                    <button class="product-color" style="background-color: #6CF6FF;"></button>
+                    <button class="product-color" style="background-color: #6CA7FF;"></button>
+                    <button class="product-color" style="background-color: #6C7BFF;"></button>
+                    <button class="product-color" style="background-color: #8A6CFF;"></button>
+                    <button class="product-color" style="background-color: #B66CFF;"></button>
+                    <button class="product-color" style="background-color: #FC6CFF;"></button>
+                    <button class="product-color" style="background-color: #FF6C6C;"></button>
+                </div>
+                <h3>Prices</h3>
+                <div class="filter-options filter-buttons-prices">
+                    <button class="letter-buttons">$0-$50</button>
+                    <button class="letter-buttons">$50-$100</button>
+                    <button class="letter-buttons">$100-$150</button>
+                    <button class="letter-buttons">$150-$200</button>
+                    <button class="letter-buttons">$200-$250</button>
+                </div>
+                <button class="header-button-collapsible">Brands</button>
+                <div class="filter-options filter-buttons-brand">
+                    <button class="letter-buttons">Minimog</button>
+                    <button class="letter-buttons">Retrolie</button>
+                    <button class="letter-buttons">Brook</button>
+                    <button class="letter-buttons">Learts</button>
+                    <button class="letter-buttons">Vagabond</button>
+                    <button class="letter-buttons">Abby</button>
+                </div>
+                <button class="header-button-collapsible">Collections</button>
+                <div class="filter-options filter-buttons-collections">
+                    <button class="letter-buttons">All products</button>
+                    <button class="letter-buttons">Best Sellers</button>
+                    <button class="letter-buttons">New Arrivals</button>
+                    <button class="letter-buttons">Accessories</button>
+                </div>
+
+                <h3>Tags</h3>
+                <div class="filter-options filter-buttons-tags">
+                    <button class="letter-buttons">Fashion</button>
+                    <button class="letter-buttons">Hats</button>
+                    <button class="letter-buttons">Sandal</button>
+                    <button class="letter-buttons">Belt</button>
+                    <button class="letter-buttons">Bags</button>
+                    <button class="letter-buttons">Snacker</button>
+                    <button class="letter-buttons">Denim</button>
+                    <button class="letter-buttons">Minimog</button>
+                    <button class="letter-buttons">Vagabond</button>
+                    <button class="letter-buttons">Sunglasses</button>
+                    <button class="letter-buttons">Beachwear</button>
+                </div>
+            </section>
+            <section class="products">
+
+            </section>
+        </main>
         <footer class="footer">
             <div class="footer-content">
                 <a href ="index.html">  
@@ -107,6 +182,6 @@
                 </nav>
             </div>
         </footer>
-        <!--script src="./scripts/index.js"></script-->
+        <script src="./scripts/shop.js"></script>
     </body>
 </html>

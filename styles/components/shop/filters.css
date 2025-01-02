@@ -1,0 +1,119 @@
+.filters{
+    width: 25%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+    padding: 2rem;
+    padding-top: 5rem;
+}
+
+.filters>h2{
+    font-family: "Volkhov";
+    font-weight: 400;
+    font-size: 3.5rem;
+    color: var(--color-black);
+
+    text-overflow: ellipsis;
+    margin-bottom: 3rem;
+}
+
+.filters>h3{
+    font-family: "Volkhov";
+    font-weight: 400;
+    font-size: 2.25rem;
+    color: var(--color-black);
+
+    text-overflow: ellipsis;
+}
+
+.filter-options{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap:1rem;
+
+    margin-bottom: 1rem;
+}
+
+.size-buttons{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 5px;
+    border: 1px solid var(--color-another-black);
+    background-color: var(--color-white);
+    cursor: pointer;
+
+    font-family: "Jost";
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--color-another-black);
+}
+
+.size-buttons:hover{
+    border: 1px solid var(--color-black);
+    color: var(--color-black);
+}
+
+.letter-buttons{
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+
+    font-family: "Poppins";
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--color-another-black);
+}
+
+.active, .letter-buttons:hover{
+    color: var(--color-black);
+}
+
+.filter-buttons-prices,.filter-buttons-collections{
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.header-button-collapsible{
+    width: 100%;
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+
+    font-family: "Volkhov";
+    font-weight: 400;
+    font-size: 2.25rem;
+    color: var(--color-black);
+    text-align: left;
+    text-overflow: ellipsis;
+}
+
+.header-button-collapsible:after{
+    /*arrow down*/
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='size-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='m19.5 8.25-7.5 7.5-7.5-7.5' /%3E%3C/svg%3E%0A");
+    height: 2rem;
+    width: 2rem;
+    float: right;
+    margin-left: 5px;
+}
+
+.active-header-collapsible:after {
+    /*arrow up*/
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='size-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='m4.5 15.75 7.5-7.5 7.5 7.5' /%3E%3C/svg%3E%0A");
+    height: 2rem;
+    width: 2rem;
+}
+
+.filter-options.filter-buttons-brand,
+.filter-options.filter-buttons-collections{
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}

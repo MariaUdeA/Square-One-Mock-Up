@@ -57,6 +57,7 @@
 }
 
 .product_image{
+    display: block;
     aspect-ratio: 0.75;
     height:auto;
     width: auto;
@@ -133,6 +134,7 @@
 
 .more-item-button{
     display:flex;
+    width:fit-content;
     flex-direction: row;
     gap:0.8rem;
     border: solid 1px var(--color-another-black);

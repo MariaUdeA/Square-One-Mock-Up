@@ -1,0 +1,26 @@
+@import "./header.css";
+@import "./footer.css";
+@import "./product-card.css";
+@import "./shop/filters.css";
+@import "./shop/shop-products.css";
+
+
+.body{
+    width:100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main{
+    width:100%;
+    max-width: 1280px;
+    min-height: calc(100dvh - 111px);
+    box-sizing: border-box;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}

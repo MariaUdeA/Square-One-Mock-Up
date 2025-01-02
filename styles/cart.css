@@ -29,10 +29,3 @@ p, a, span{
     display: block;
 }
 
-.icon{
-    stroke: currentColor; /*con style="color, se puede modificar"*/
-    display: block;
-    width: 3rem; /*minimo 24px*/
-    height: 3rem; /*minimo 24px*/
-}
-

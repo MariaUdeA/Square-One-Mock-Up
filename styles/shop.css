@@ -1,6 +1,6 @@
 @import "./reset.css";
 @import "./fonts.css";
-@import "./components/checkout.css";
+@import "./components/shop.css";
 
 :root {
     font-size: 8px;
@@ -17,7 +17,6 @@
     --color-lighter-grey: #e5e5e5;
     --color-cream: #DBD0CCCC;
     --color-cream-orange: #A86A3D;
-    --color-beige: #F5F5F5;
 
 }
 p, a, span{
@@ -27,5 +26,4 @@ p, a, span{
 .img-logo{
     display: block;
 }
-
 

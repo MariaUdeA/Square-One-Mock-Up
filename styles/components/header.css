@@ -48,7 +48,7 @@
     overflow: visible;
 }
 
-.product-quantity{
+.product-total{
     position: absolute;
     left: 50%; /* Adjust the distance from the right edge */
     bottom: 0; /*in center*/
@@ -70,12 +70,12 @@
     transition: all 300ms;
 }
 
-.shopping-cart-box:hover>.product-quantity{
+.shopping-cart-box:hover>.product-total{
     color:var(--color-white);
     background-color: var(--color-black);
 }
 /*I am repeating this because the transition looks weird*/
-.shopping-cart-box:hover>.icon-header-{
+.shopping-cart-box:hover>.icon-header{
     color:var(--color-primary);
 }
 
