@@ -1,3 +1,4 @@
+//Collapsibles!!!!
 var coll = document.getElementsByClassName("header-button-collapsible");
 var i;
 
@@ -12,3 +13,29 @@ for (i = 0; i < coll.length; i++) {
     } 
   });
 }
+
+
+/**
+ * Select column according to the button
+ * @param {*} event 
+ */
+function selectColumn(event) {
+  // Remove "selected" class from all buttons
+  const buttons = document.querySelectorAll('.col-button');
+  buttons.forEach(button => button.classList.remove('selected'));
+
+  // Mark the clicked button as selected
+  event.currentTarget.classList.add('selected');
+  
+  //Get the columns
+  const columns = event.currentTarget.getAttribute('data-col');
+
+  // Create the grid based on the selected number of columns
+  var grid = document.getElementsByClassName('product-grid')[0];
+  grid.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
+  //grid.innerHTML = '';  // Clear the grid
+}
+
+document.querySelectorAll('.col-button').forEach(button => {
+  button.addEventListener('click', selectColumn);
+});
