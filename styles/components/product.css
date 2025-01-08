@@ -1,0 +1,46 @@
+@import "./header.css";
+@import "./footer.css";
+@import "./product-card.css";
+@import "./product/minipage-product.css";
+@import "./product/show-product.css";
+@import "./product/show-img.css";
+@import "./product/lower-part.css";
+
+
+.body{
+    width:100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main{
+    width:100%;
+    max-width: 1280px;
+    min-height: calc(100dvh - 111px);
+    box-sizing: border-box;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.upper-product{
+    width:100%;
+    box-sizing: border-box;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 760px) {
+    .upper-product{
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}

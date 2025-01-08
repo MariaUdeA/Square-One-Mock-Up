@@ -1,0 +1,92 @@
+.images-product{
+    width:100%;
+    max-height: calc(100dvh - 111px);
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column-reverse nowrap;
+
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+    overflow: hidden;
+
+    padding: 3rem;
+    gap: 1.5rem;
+}
+
+.preview-images{
+    height: 15rem;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+
+    scroll-snap-type: x mandatory; /* Snap to the next image */
+    scroll-padding: 0 2rem; /* Add space between images while snapping */
+
+    gap: 1rem;
+}
+
+.mini-img{
+    display: block;
+    box-sizing: border-box;
+    width: 9rem;
+    height: 11rem;
+
+    object-fit: cover;
+    object-position: center;
+
+    scroll-snap-align: start; /* Ensures images snap into place */
+
+}
+
+.main-img {
+    display: block;
+    box-sizing: border-box;
+    max-height: calc(100dvh - 300px); /*For whatever reason percentages didn't work here, weeelp */
+    height: auto;
+    width: auto;
+    max-width: 100%; /* Allow the image to scale properly */
+    object-fit: contain;
+    object-position: top center;
+    aspect-ratio: auto;
+}
+
+@media screen and (min-width: 760px) {
+    .images-product{
+        width:60%;
+        flex-flow: row nowrap;
+    
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .preview-images{
+        width: 12rem;
+        height: auto;
+        max-height: 100%;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .main-img{
+    
+        height: 100%; /* Let the image take up the full available width */
+        width: auto;
+        max-width: calc(100% - 15rem); /* Ensure it doesn't exceed the width of its container */
+        max-height: 100%; /* Ensure the image fits within the height of its container */
+        height: auto; /* Maintain aspect ratio by adjusting height accordingly */
+        object-fit: contain; /* Preserve the image's aspect ratio without cropping */
+        object-position: top center; /* Center the image */
+    
+        aspect-ratio:auto;
+    }
+}

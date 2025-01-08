@@ -4,7 +4,7 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>SQ1 Academy Store</title>
-        <link rel="stylesheet" href="styles/index.css"/>
+        <link rel="stylesheet" href="styles/product.css"/>
 
         <link rel="icon" href="https://www.square1.io/favicon.svg" type="image/svg+xml"> <!-- Fallback -->
         <link rel="icon" href="https://www.square1.io/favicon.ico" type="image/ico"> <!-- Fallback -->
@@ -40,7 +40,7 @@
                     <a href ="#" class="icon-header icons-search">
                         <svg aria-labelledby="searchTitle"
                             xmlns="http://www.w3.org/2000/svg"
-                            fill="none" viewBox="0 0 28 28" height="24"
+                            fill="none" viewBox="0 0 28 28"
                             stroke="currentColor"
                             class="icon">
                             <title id="searchTitle">Search</title>
@@ -56,7 +56,7 @@
                     <a href ="#" class="icon-header icons-profile">
                         <svg aria-labelledby="profileTitle"
                             xmlns="http://www.w3.org/2000/svg" 
-                            fill="none" viewBox="0 0 23 31" height="24" 
+                            fill="none" viewBox="0 0 23 31" 
                             stroke="currentColor" 
                             class="icon">
                             <title id="profileTitle">Profile</title>
@@ -66,16 +66,19 @@
                     </a>
 
                     <!--Shopping icon-->
-                    <a href ="#" class="icon-header icons-shopping">
-                        <svg aria-labelledby="shoppingTitle"
-                            xmlns="http://www.w3.org/2000/svg" 
-                            fill="none" viewBox="0 0 34 34"   height="24" 
-                            stroke="currentColor" 
-                            class="icon">
-                            <title id="shoppingTitle">Shopping Cart</title>
-                            <path d="M8.00091 30.25C7.36341 30.25 6.79674 30.0552 6.30091 29.6656C5.80508 29.276 5.46272 28.7743 5.27383 28.1604L1.66133 15.0562C1.54327 14.6076 1.62001 14.1944 1.89154 13.8167C2.16306 13.4389 2.53494 13.25 3.00716 13.25H9.73633L15.9697 3.97083C16.0877 3.78194 16.253 3.62847 16.4655 3.51042C16.678 3.39236 16.9023 3.33333 17.1384 3.33333C17.3745 3.33333 17.5988 3.39236 17.8113 3.51042C18.0238 3.62847 18.1891 3.78194 18.3072 3.97083L24.5405 13.25H31.3405C31.8127 13.25 32.1846 13.4389 32.4561 13.8167C32.7276 14.1944 32.8044 14.6076 32.6863 15.0562L29.0738 28.1604C28.8849 28.7743 28.5426 29.276 28.0467 29.6656C27.5509 30.0552 26.9842 30.25 26.3467 30.25H8.00091ZM7.96549 27.4167H26.3822L29.4988 16.0833H4.84883L7.96549 27.4167ZM17.1738 24.5833C17.953 24.5833 18.62 24.3059 19.1749 23.751C19.7297 23.1962 20.0072 22.5292 20.0072 21.75C20.0072 20.9708 19.7297 20.3038 19.1749 19.749C18.62 19.1941 17.953 18.9167 17.1738 18.9167C16.3947 18.9167 15.7276 19.1941 15.1728 19.749C14.6179 20.3038 14.3405 20.9708 14.3405 21.75C14.3405 22.5292 14.6179 23.1962 15.1728 23.751C15.7276 24.3059 16.3947 24.5833 17.1738 24.5833ZM13.1717 13.25H21.1405L17.1384 7.3L13.1717 13.25Z" fill="currentColor"/>
-                        </svg>
-                    </a>
+                    <div class="shopping-cart-box">
+                        <a href ="./cart.html" class="icon-header icons-shopping">
+                            <svg aria-labelledby="shoppingTitle"
+                                xmlns="http://www.w3.org/2000/svg" 
+                                fill="none" viewBox="0 0 34 34" 
+                                stroke="currentColor" 
+                                class="icon">
+                                <title id="shoppingTitle">Shopping Cart</title>
+                                <path d="M8.00091 30.25C7.36341 30.25 6.79674 30.0552 6.30091 29.6656C5.80508 29.276 5.46272 28.7743 5.27383 28.1604L1.66133 15.0562C1.54327 14.6076 1.62001 14.1944 1.89154 13.8167C2.16306 13.4389 2.53494 13.25 3.00716 13.25H9.73633L15.9697 3.97083C16.0877 3.78194 16.253 3.62847 16.4655 3.51042C16.678 3.39236 16.9023 3.33333 17.1384 3.33333C17.3745 3.33333 17.5988 3.39236 17.8113 3.51042C18.0238 3.62847 18.1891 3.78194 18.3072 3.97083L24.5405 13.25H31.3405C31.8127 13.25 32.1846 13.4389 32.4561 13.8167C32.7276 14.1944 32.8044 14.6076 32.6863 15.0562L29.0738 28.1604C28.8849 28.7743 28.5426 29.276 28.0467 29.6656C27.5509 30.0552 26.9842 30.25 26.3467 30.25H8.00091ZM7.96549 27.4167H26.3822L29.4988 16.0833H4.84883L7.96549 27.4167ZM17.1738 24.5833C17.953 24.5833 18.62 24.3059 19.1749 23.751C19.7297 23.1962 20.0072 22.5292 20.0072 21.75C20.0072 20.9708 19.7297 20.3038 19.1749 19.749C18.62 19.1941 17.953 18.9167 17.1738 18.9167C16.3947 18.9167 15.7276 19.1941 15.1728 19.749C14.6179 20.3038 14.3405 20.9708 14.3405 21.75C14.3405 22.5292 14.6179 23.1962 15.1728 23.751C15.7276 24.3059 16.3947 24.5833 17.1738 24.5833ZM13.1717 13.25H21.1405L17.1384 7.3L13.1717 13.25Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <div class="product-total">4</div>
+                    </div>
                 </div>          
             </div>
             <nav class="header-nav">
@@ -88,6 +91,128 @@
                 <a href="#" class="nav-item">contact us</a>
             </nav>
         </header>
+        <main class="main">
+            <div class="upper-product">
+                <section class="images-product">
+                    <div class="preview-images">
+                        <img class="mini-img" src="./assets/images/cashmere1.jpg" alt="Close-up to the top"/>
+                        <img class="mini-img" src="./assets/images/cashmere2.avif" alt="Lady with the top on"/>
+                        <img class="mini-img" src="./assets/images/cashmere3.avif" alt="Grey top on white background"/>
+                        <img class="mini-img" src="./assets/images/cashmere4.avif" alt="Lady with the top on, closer"/>
+                        <img class="mini-img" src="./assets/images/cashmere5.avif" alt="Top on the back"/>
+                        <img class="mini-img" src="./assets/images/cashmere6.webp" alt="Close up to the end of the sleeves"/>
+                        <img class="mini-img" src="./assets/images/cashmere7.avif" alt="Full fit using the top"/>
+                    </div>
+                    <img class="main-img" src="./assets/images/cashmere3.avif" alt="Grey top on white background"/>
+                </section>
+                <section class="desc-product">
+                    <p class="brand title-text">Gucci</p>
+                    <h1 class="product-name title-text">Wool and Cashemere Top</h1>
+                    <div class="star-rating">
+                        <span class="star checked"></span>
+                        <span class="star checked"></span>
+                        <span class="star checked"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="value">(3)</span>
+                    </div>
+                    <div class="product-card_prices">
+                        <span class="product-card_discount-price">$1.600</span>  <!--Descuento-->
+                        <span class="product-card_original-price">$2.030</span>  <!--Original-->
+                        <span class="save-percent">Save 33%</span>
+                    </div>
+                    <p class="viewership">24 people are viewing this right now</p>
+                    <div class="ending-sale">
+                        <p class="end-sale-text">Hurry up! Sale ends in:</p>
+                        <div class="time-to-end">
+                            <p class="days time-text">00</p>
+                            <p class="two dots time-text">:</p>
+                            <p class="hours time-text">05</p>
+                            <p class="two dots time-text">:</p>
+                            <p class="minutes time-text">59</p>
+                            <p class="two dots time-text">:</p>
+                            <p class="seconds time-text">47</p>
+                        </div>
+                    </div>
+                    <div class="items-in-stock">
+                        <p class="stock-text">Only <span>9</span> item(s) left in stock!</p>
+                        <div class="progress-bar">
+                            <div class="progressing-bar" style="width:5%"></div>
+                        </div>
+                    </div>
+
+                    <div class="product-param">
+                        <h3 class="title-text"><b>Size:</b> M</h3>
+                        <div class="filter-options filter-buttons-size">
+                            <button class="size-buttons">XS</button>
+                            <button class="size-buttons">S</button>
+                            <button class="size-buttons selected">M</button>
+                            <button class="size-buttons">L</button>
+                            <button class="size-buttons">XL</button>
+                        </div>
+                    </div>
+
+                    <div class="product-param">
+                        <h3 class="title-text"><b>Color:</b> Blue</h3>
+                        <div class="filter-options filter-buttons-colors">
+                            <button class="product-color" style="background-color: #FF6C6C;"></button>
+                            <button class="product-color active" style="background-color: #FF7629;"></button>
+                            <button class="product-color" style="background-color: #FFF06C;"></button>
+                        </div>
+                    </div>
+
+                    <div class="product-param">                 
+                        <h3 class="title-text">Quantity</h3>
+                        <div class="more-and-cart-buttons">
+                            <div class="more-item-button">
+                                <button>-</button>
+                                <input type="numeric" placeholder="01" maxlength="2">
+                                <button>+</button>
+                            </div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section class="information-product">
+                <div class="more-info-buttons">
+                    <button class="compare-btn info-btn">Compare</button> 
+                    <button class="question-btn info-btn">Ask a Question</button> 
+                    <button class="share-btn info-btn">Share</button> 
+                </div>
+                <div class="delivery-time">
+                    <span class="delivery-time-text title-text">Estimated delivery: </span>
+                    <span class="delivery-time-dates">Jul 30 - Aug 03</span>
+                </div>
+
+                <p class="Shipping-info title-text"><b>Free Shipping & Returns:</b> On all orders over $75</p>
+
+                <img class="payment-methods" src="./assets/images/payment-methods.png"/>
+
+                <p class="guaranteed-checkout title-text">Guarantee safe & secure checkout</p>
+            </section>
+            
+            <!--
+            <section id="minipage" class="modalmask">
+                <div class="modal-content moveleft">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h1>Shopping Cart</h1>
+                    <p class="buy-more-text">Buy <span>$122.35</span> more and get <span>free shipping</span></p>
+                    <article class="product-mini-card">
+                        <img class="product_image"
+                        src="./assets/images/red_dress.png"
+                        alt="Mini Dress With Ruffled Straps"/>
+                        <div class="product-details">
+                            <h3>Mini Dress With Ruffed Straps</h3>
+                            <p>Color: Red</p>
+                        </div>
+                    </article>
+                </div>
+                
+            </section>
+            -->
+            
+        </main>
         <footer class="footer">
             <div class="footer-content">
                 <a href ="index.html">  
@@ -107,6 +232,6 @@
                 </nav>
             </div>
         </footer>
-        <!--script src="./scripts/index.js"></script-->
+        <script src="./scripts/product.js"></script>
     </body>
 </html>

@@ -1,0 +1,292 @@
+.desc-product{
+    flex-grow: 1;
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-flow: column nowrap;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    gap: 2.5rem;
+    padding: 3rem;
+}
+
+.title-text{
+    width:100%;
+    font-family: "Volkhov";
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+.brand{
+    font-size: 1.75rem;
+    color: var(--color-another-black);
+    text-transform: uppercase;
+}
+
+.product-name{
+    font-size: 3.75rem;
+}
+
+.star-rating{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:0rem;
+}
+
+.star {
+    width: 2rem;
+    height: 2rem;
+    background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1_5529)'%3E%3Cpath d='M15 6.54547L9.55274 6.18723L7.5 1.0304L5.44726 6.18726L0 6.5455L4.17943 10.0884L2.80828 15.4696L7.5 12.5043L12.1917 15.4696L10.8206 10.0886L15 6.54547ZM7.5 11.4646L4.20516 13.547L5.16688 9.77264L2.22155 7.27992L6.05859 7.02788L7.5 3.40684L8.94141 7.0279L12.7829 7.27992L9.83306 9.77241L10.7948 13.547L7.5 11.4646Z' fill='black'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_5529'%3E%3Crect width='15' height='15' fill='white' transform='translate(0 0.75)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+    background-size: cover; /* Make sure the SVG scales */
+    background-position: center;
+}
+
+.star.checked {
+    width: 2rem;
+    height: 2rem;
+    background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 5.54538L9.54964 5.18705L7.49701 0.0303345L5.44439 5.18705L0 5.54538L4.1758 9.09107L2.80553 14.4697L7.49701 11.5042L12.1885 14.4697L10.8183 9.09107L15 5.54538Z' fill='black'/%3E%3C/svg%3E");
+    background-size: cover; /* Make sure the SVG scales */
+    background-position: center;
+}
+
+.star-rating>.value{
+    font-family: "Jost";
+    font-size: 2rem;
+    font-weight: 400;
+    margin-left: 1rem;
+}
+
+.product-card_prices{
+    align-items: flex-end;
+}
+
+.product-card_discount-price{
+    font-family: "Volkhov";
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.product-card_original-price{
+    font-family: "Jost";
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.save-percent{
+    font-family: "Jost";
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-white);
+
+    padding:0.5rem 1.5rem;
+    border-radius: 11px;
+    background-color: var(--color-primary);
+}
+
+.viewership{
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: left;
+    line-height: 3rem;
+    color: var(--color-another-black);
+}
+
+.viewership:before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 13px;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='13' viewBox='0 0 20 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.7693 5.65386C17.8115 2.33157 14.1601 0.111115 10 0.111115C5.83821 0.111115 2.18766 2.33313 0.23078 5.65386C0.0796862 5.91025 0 6.20242 0 6.50002C0 6.79762 0.0796862 7.08979 0.23078 7.34618C2.18859 10.6684 5.83995 12.8889 10 12.8889C14.1618 12.8889 17.8124 10.6669 19.7693 7.34615C19.9203 7.08976 20 6.7976 20 6.5C20 6.20241 19.9203 5.91024 19.7693 5.65386ZM10 11.2222C6.43904 11.2222 3.33019 9.32289 1.66668 6.5C3.19991 3.89816 5.96102 2.08091 9.17231 1.81226C9.51245 2.16243 9.72224 2.63993 9.72224 3.16667C9.72224 4.24056 8.85168 5.11111 7.77779 5.11111C6.70391 5.11111 5.83335 4.24056 5.83335 3.16667L5.83338 3.16521C5.47898 3.82789 5.27779 4.58486 5.27779 5.38889C5.27779 7.99691 7.392 10.1111 10 10.1111C12.608 10.1111 14.7222 7.99691 14.7222 5.38889C14.7222 4.31143 14.3611 3.31844 13.7537 2.52379C15.6842 3.32771 17.292 4.73285 18.3334 6.5C16.6699 9.32289 13.561 11.2222 10 11.2222Z' fill='black' stroke='black' stroke-width='0.0347222'/%3E%3C/svg%3E%0A");
+    background-size: contain;
+    background-position: center;
+    margin-right: 1.5rem;
+}
+
+.ending-sale{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 2rem;
+    padding-left: 1.5rem;
+
+    border: 1px solid #F8CCCC;
+    background-color: #FDEFEE;
+    border-radius: 4px;
+    gap: 2rem;
+
+    color: #FF706B;
+}
+
+.end-sale-text{
+    font-family: "Volkhov";
+    font-weight: 400;
+    font-size: 2.25rem;
+    text-align: left;
+}
+
+.time-to-end{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    align-items: flex-end;
+}
+
+.time-text{
+    font-family: "Jost";
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.items-in-stock{
+    width: 100%;
+    box-sizing:border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:1rem;
+}
+
+.stock-text{
+    font-family: "Jost";
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.stock-text>span{
+    font-weight: 700;
+}
+
+.progress-bar{
+    width:100%;
+    border-radius: 2px;
+    height: 0.6rem;
+    background-color: var(--color-DEDEDE);
+}
+
+.progressing-bar{
+    background-color: var(--color-primary);
+    border-radius: 2px;
+    height: 100%;
+}
+
+.product-param{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:1.5rem;
+}
+
+.title-text>b{
+    font-weight: 700;
+}
+
+.filter-options{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.size-buttons{
+    transition: all 300ms ease;
+    font-family: "Jost";
+    color: var(--color-black);
+
+    background-color: transparent;
+    border: 1px solid #EEEEEE;
+}
+
+.size-buttons.selected{
+    color: var(--color-white);
+
+    background-color: var(--color-black);
+    border: 1px solid var(--color-black);
+}
+
+.product-color.active{
+    box-shadow: 0 0 0 1px var(--color-black); /* Outer black border + additional shadow */
+    border: 3px solid var(--color-white);
+}
+
+.more-and-cart-buttons{
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    gap: 2.5rem;
+}
+
+.more-item-button{
+    border: 1px solid #EEEEEE;
+}
+
+.more-item-button>input{
+    font-family: "Jost";
+    color: var(--color-black);
+}
+
+.more-item-button>button{
+    font-weight: 200;
+}
+
+.add-to-cart-button{
+    flex-grow: 1;
+    display: block;
+
+    color: var(--color-black);
+    border: 1px solid var(--color-black);
+    text-decoration: none;
+
+    font-family: "Volkhov";
+    font-size: 2rem;
+    font-weight: 400;
+
+    padding:1.5rem;
+    border-radius: 5px;
+ 
+    transition: all 300ms ease;
+}
+
+.add-to-cart-button:hover{
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+@media screen and (min-width: 760px) {
+    .desc-product{
+        width: 40%;
+    }
+    .time-to-end{
+        flex-wrap: nowrap;
+    }
+}
