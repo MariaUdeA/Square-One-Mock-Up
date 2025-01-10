@@ -21,4 +21,4 @@ This is the repository dedicated to the Square-One store Mock-Up and will includ
 ## Notes
 - The mobile version horizontal product card is used since it was discussed in class, which would tecnically count as a design meeting.
 
-- So, let's see if I'm able to finish this, sorry about that, hehe.
+- This has been completed in terms of the first part of the projet, there will be some small fixes (or big ones) for the final part.
