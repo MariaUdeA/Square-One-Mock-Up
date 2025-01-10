@@ -92,8 +92,8 @@
             </nav>
         </header>
         <main class="main">
-            <div class="upper-product">
-                <section class="images-product">
+            <section class="upper-product">
+                <div class="images-product">
                     <div class="preview-images">
                         <img class="mini-img" src="./assets/images/cashmere1.jpg" alt="Close-up to the top"/>
                         <img class="mini-img" src="./assets/images/cashmere2.avif" alt="Lady with the top on"/>
@@ -104,8 +104,8 @@
                         <img class="mini-img" src="./assets/images/cashmere7.avif" alt="Full fit using the top"/>
                     </div>
                     <img class="main-img" src="./assets/images/cashmere3.avif" alt="Grey top on white background"/>
-                </section>
-                <section class="desc-product">
+                </div>
+                <div class="desc-product">
                     <p class="brand title-text">Gucci</p>
                     <h1 class="product-name title-text">Wool and Cashemere Top</h1>
                     <div class="star-rating">
@@ -172,8 +172,8 @@
                             <button class="add-to-cart-button">Add to Cart</button>
                         </div>
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
             <section class="information-product">
                 <div class="more-info-buttons">
                     <button class="compare-btn info-btn">Compare</button> 
@@ -191,26 +191,43 @@
 
                 <p class="guaranteed-checkout title-text">Guarantee safe & secure checkout</p>
             </section>
-            
-            <!--
-            <section id="minipage" class="modalmask">
-                <div class="modal-content moveleft">
-                    <a href="#close" title="Close" class="close">X</a>
+
+            <section class="mini-cart">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                
+                <div class="mini-cart-content">
                     <h1>Shopping Cart</h1>
                     <p class="buy-more-text">Buy <span>$122.35</span> more and get <span>free shipping</span></p>
-                    <article class="product-mini-card">
-                        <img class="product_image"
-                        src="./assets/images/red_dress.png"
-                        alt="Mini Dress With Ruffled Straps"/>
-                        <div class="product-details">
-                            <h3>Mini Dress With Ruffed Straps</h3>
-                            <p>Color: Red</p>
+                        <article class="product-mini-card">
+                            <img class="product_image"
+                            src="./assets/images/cashmere3.avif"
+                            alt="Mini Dress With Ruffled Straps"/>
+                            <div class="product-details">
+                                <h3>Wool and Cashemere Top</h3>
+                                <p>Color: Grey</p>
+                                <p class="product-price-text">$1600</p>
+                                <div class="more-item-button">
+                                    <button>-</button>
+                                    <input type="numeric" placeholder="01" maxlength="2">
+                                    <button>+</button>
+                                </div>
+                            </div>
+                        </article>
+
+                    <section class="product-checkout">
+                        <div class="complete-checkbox">
+                            <input type="checkbox" id="wrap-checkbox" class="square">
+                            <label for="wrap-checkbox">For <span>$10.00</span> Please Wrap The Product</label>
                         </div>
-                    </article>
+                        <div class="subtotal">
+                            <p>Subtotal</p>
+                            <p>$100.00</p>
+                        </div>
+                        <a class="checkout-btn" role="button" href="./checkout.html">Checkout</button>
+                        <a class="view-cart" href="./cart.html">View Cart</a>
+                    </section>
                 </div>
-                
             </section>
-            -->
             
         </main>
         <footer class="footer">

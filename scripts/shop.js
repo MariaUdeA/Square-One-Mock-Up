@@ -33,7 +33,6 @@ function selectColumn(event) {
   // Create the grid based on the selected number of columns
   var grid = document.getElementsByClassName('product-grid')[0];
   grid.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
-  //grid.innerHTML = '';  // Clear the grid
 }
 
 document.querySelectorAll('.col-button').forEach(button => {

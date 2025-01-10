@@ -171,6 +171,7 @@
     line-height: 2rem;
     font-family: "Poppins";
     text-align: center;
+    cursor: pointer;
 
     color: var(--color-blackishy);
     font-weight: 500;
